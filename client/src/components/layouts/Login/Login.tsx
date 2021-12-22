@@ -19,10 +19,9 @@ const Login = () => {
       <Box direction='row' justify='center' align='center' height='100vh'>
         <Box
           direction='column'
-          justify='evenly'
-          // border={{ color: 'slategray', size: 'small' }}
+          justify='around'
           width='medium'
-          height='medium'
+          height='32rem'
           round='small'
           pad='medium'
           elevation='large'
@@ -45,20 +44,10 @@ const Login = () => {
                 placeholder='**********'
               />
             </FormField>
-
-            <Box
-              border={{
-                color: 'mediumvioletred',
-                size: 'small',
-                style: 'solid',
-                side: 'all',
-              }}
-              elevation='medium'
-              round='large'
-            >
-              <Button primary color='gold' label='Login'></Button>
-            </Box>
           </Form>
+          <Box elevation='medium' round='large'>
+            <Button primary color='gold' label='Login' />
+          </Box>
           <Text size='small' alignSelf='center' textAlign='center'>
             Signup via
           </Text>
@@ -69,6 +58,9 @@ const Login = () => {
             <Button>
               <Google color='plain' size='30rem'></Google>
             </Button>
+          </Box>
+          <Box elevation='medium' round='large'>
+            <Button primary color='mediumaquamarine' label='Signup' />
           </Box>
         </Box>
       </Box>
