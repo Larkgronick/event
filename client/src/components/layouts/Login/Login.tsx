@@ -15,12 +15,12 @@ const Login = () => {
     <Grommet plain>
       <Box
         direction='column'
-        border={{ color: 'slategrey', size: 'small' }}
+        border={{ color: 'slategray', size: 'small' }}
         width='medium'
         height='large'
         round='small'
         pad='medium'
-        animation={{type: 'jiggle', size: 'xlarge'}} // LOL, make it stop!
+        // animation={{ type: 'jiggle', size: 'xlarge', duration: 2 }} // LOL, make it stop!
       >
         <Form>
           <FormField name='email' htmlFor='email' label='Email'>
@@ -28,7 +28,7 @@ const Login = () => {
               id='email'
               type='text'
               name='email'
-              placeholder='frank_sinatra@email.com'
+              placeholder='frank_sinatra1@email.com'
             />
           </FormField>
           {/* <div /> */}
