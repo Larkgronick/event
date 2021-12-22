@@ -48,6 +48,10 @@ const Login = () => {
           <Box elevation='medium' round='large'>
             <Button primary color='gold' label='Login' />
           </Box>
+          <Box elevation='medium' round='large'>
+            <Button primary color='mediumaquamarine' label='Signup' />{' '}
+            {/* This Signup button, ought to have an onclick function, that reveals additional inputs for registration, i.e, Username, Confirm Password, etc */}
+          </Box>
           <Text size='small' alignSelf='center' textAlign='center'>
             Signup via
           </Text>
@@ -58,9 +62,6 @@ const Login = () => {
             <Button>
               <Google color='plain' size='30rem'></Google>
             </Button>
-          </Box>
-          <Box elevation='medium' round='large'>
-            <Button primary color='mediumaquamarine' label='Signup' />
           </Box>
         </Box>
       </Box>
