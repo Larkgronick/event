@@ -57,10 +57,10 @@ const Login = () => {
           </Text>
           <Box width='8rem' direction='row' justify='evenly' alignSelf='center'>
             <Button>
-              <Facebook color='plain' size='30rem'></Facebook>
+              <Facebook color='plain' size='30rem' />
             </Button>
             <Button>
-              <Google color='plain' size='30rem'></Google>
+              <Google color='plain' size='30rem' />
             </Button>
           </Box>
         </Box>
