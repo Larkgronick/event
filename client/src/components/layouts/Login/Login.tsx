@@ -14,9 +14,17 @@ import {
 import { Facebook, Google } from 'grommet-icons';
 
 const Login = () => {
+  // let googleLogo = document.getElementById('logo_google');
+
   return (
     <Grommet full background='aliceblue'>
-      <Box direction='row' justify='center' align='center' height='100vh' animation="fadeIn">
+      <Box
+        direction='row'
+        justify='center'
+        align='center'
+        height='100vh'
+        animation='fadeIn'
+      >
         <Box
           direction='column'
           justify='around'
@@ -59,7 +67,14 @@ const Login = () => {
             <Button>
               <Facebook color='plain' size='30rem' />
             </Button>
-            <Button>
+            <Button
+              id='logo_google'
+              onMouseEnter={() => {
+                // googleLogo.style.color = "blue";
+              }}
+            >
+              {' '}
+              {/* Intend to create a fuction that translate */}
               <Google color='plain' size='30rem' />
             </Button>
           </Box>
