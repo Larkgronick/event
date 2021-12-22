@@ -16,7 +16,7 @@ import { Facebook, Google } from 'grommet-icons';
 const Login = () => {
   return (
     <Grommet full background='aliceblue'>
-      <Box direction='row' justify='center' align='center' height='100vh'>
+      <Box direction='row' justify='center' align='center' height='100vh' animation="fadeIn">
         <Box
           direction='column'
           justify='around'
@@ -32,7 +32,7 @@ const Login = () => {
                 id='email'
                 type='text'
                 name='email'
-                placeholder='frank_sinatra1@email.com'
+                placeholder='frank_sinatra@email.com'
               />
             </FormField>
 
