@@ -5,6 +5,7 @@ import {
   Card,
   CardBody,
   CardHeader,
+  DateInput,
   Form,
   FormField,
   Grommet,
@@ -152,11 +153,10 @@ const Login = () => {
               htmlFor='birth_date'
               label='Date of Birth'
             >
-              <TextInput
-                id='birth_date'
-                type='date'
-                name='birth_date'
-                // placeholder='**********'
+              <DateInput
+                format='dd/mm/yyyy'
+                // value={new Date().toISOString()}
+                // onChange={({ value }) => {}}
               />
             </FormField>
 
@@ -165,7 +165,7 @@ const Login = () => {
                 options={['Male', 'Female']}
                 value={gender}
                 onChange={({ option }) => setGender(option)}
-                placeholder="Select your gender"
+                placeholder='Select your gender'
               />
             </FormField>
 
