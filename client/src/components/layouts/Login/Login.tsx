@@ -18,6 +18,12 @@ import { Facebook, Google } from 'grommet-icons';
 const Login = () => {
   // let googleLogo = document.getElementById('logo_google');
   const [gender, setGender] = React.useState('');
+  const [calendarIsOpen, setCalendarIsOpen] = React.useState(false);
+  const [selectedDate, setSelectedDate] = React.useState('');
+  {
+    /* new Date().toISOString() */
+  }
+  const hideCalendar = () => setCalendarIsOpen(false);
 
   return (
     // <Grommet full background='aliceblue'>
@@ -152,11 +158,21 @@ const Login = () => {
               name='birth_date'
               htmlFor='birth_date'
               label='Date of Birth'
+              onFocus={() => {
+                setCalendarIsOpen(true);
+              }}
+              onClick={hideCalendar}
+              onBlur={hideCalendar}
             >
               <DateInput
                 format='dd/mm/yyyy'
-                // value={new Date().toISOString()}
-                // onChange={({ value }) => {}}
+                value={selectedDate}
+                onChange={({ value }) => {
+                  hideCalendar();
+                  setSelectedDate(value.toLocaleString());
+                }}
+                inline={calendarIsOpen}
+                size='small'
               />
             </FormField>
 
