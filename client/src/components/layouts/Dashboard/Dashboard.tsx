@@ -71,3 +71,12 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
+
+// [P L E A S E   R E A D]
+
+// What's up! Please take a look at "center" when changing your browser's zoom level.
+
+// There is an issue with flexbox, where increasing the width of the "trending searches component", 
+// pushes the main header text to left, resulting in the main heading being off-center.
+
+// One solution would be to add CSS position: absolute; to the "trending searches" container on the right side. 
