@@ -1,9 +1,15 @@
-import React from "react";
+import React from 'react';
+import About from './components/About';
+import Confirmation from './components/Confirmation';
+import Interests from './components/Interests';
+import Location from './components/Location';
 
 const PreferencesSurvey = () => {
-    return (
-        <div>User gives us info about himself</div>
-    )
-}
+  return (
+    <div>
+      <About />
+    </div>
+  );
+};
 
 export default PreferencesSurvey;
