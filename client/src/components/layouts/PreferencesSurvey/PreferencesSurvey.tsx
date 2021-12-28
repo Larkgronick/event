@@ -8,6 +8,9 @@ const PreferencesSurvey = () => {
   return (
     <div>
       <About />
+      {/* <Confirmation />
+      <Interests />
+      <Location /> */}
     </div>
   );
 };
