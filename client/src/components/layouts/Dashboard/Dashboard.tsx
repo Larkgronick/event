@@ -13,57 +13,57 @@ const Dashboard = () => {
         justify='center'
         background='orange'
       >
-        <Box background='purple'>
-          <Text textAlign='center'>Center</Text>
-        </Box>
+        {/* <Box className='DashboardContent__title' background='purple'>
+          <Heading textAlign='center'>Trending Events</Heading>
+        </Box> */}
+
         <Box
+          className='DashboardContent__title'
+          style={{ zIndex: 1, position: 'absolute', top: '2.5%' }}
+        >
+          <Heading textAlign='center'>Trending Events</Heading>
+        </Box>
+
+        <Box
+          className='DashboardContent'
           width='95%'
           height='95%'
           direction='row'
           justify='between'
           background='seagreen'
-          // alignSelf='center'
         >
-          <Box>
+          <Box className='DashboardContent__navigation'>
             <Anchor>Explore</Anchor>
             <Anchor>My Events</Anchor>
             <Anchor>Manage Events</Anchor>
           </Box>
 
-          {/* <Box margin={{ left: '17.5%' }} background='pink'> */}
-          <Box background='pink' margin={{ left: '17%' }}>
-            {/* <Heading textAlign='center'>Trending Events</Heading> */}
+          {/* <Box className='DashboardContent__title' background='pink' height="15%" margin={{left: '3.5%'}}>
+            <Heading textAlign='center'>Trending Events</Heading>
             <Text textAlign='center'>Center</Text>
-          </Box>
+          </Box> */}
 
-          {/* <Box direction='column' width='25%' height='15%'> */}
           <Box
-            className='trending-searches'
+            className='DashboardContent__trendingSearches'
             round
             elevation='small'
-            width='25%'
+            // width=''
+            basis='12%'
             height='15%'
             direction='row'
             justify='between'
-            align='center'
-            // alignContent='end'
-            wrap
+            align='start'
             pad='medium'
+            wrap
+            background='white'
           >
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
-            <Anchor>Hashtag</Anchor>
+            <Anchor size='small'>#Hashtag</Anchor>
+            <Anchor size='small'>#Hashtag</Anchor>
+            <Anchor size='small'>#Hashtag</Anchor>
+            <Anchor size='small'>#Hashtag</Anchor>
+            <Anchor size='small'>#Hashtag</Anchor>
+            <Anchor size='small'>#Hashtag</Anchor>
           </Box>
-          {/* </Box> */}
         </Box>
       </Box>
     </Grommet>
@@ -76,7 +76,7 @@ export default Dashboard;
 
 // What's up! Please take a look at "center" when changing your browser's zoom level.
 
-// There is an issue with flexbox, where increasing the width of the "trending searches component", 
+// There is an issue with flexbox, where increasing the width of the "trending searches component",
 // pushes the main header text to left, resulting in the main heading being off-center.
 
-// One solution would be to add CSS position: absolute; to the "trending searches" container on the right side. 
+// One solution would be to add CSS position: absolute; to the "trending searches" container on the right side.

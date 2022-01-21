@@ -1,3 +1,14 @@
-/* .trending-searches {
-    position: absolute;
-} */
+.DashboardContent__navigation {
+    z-index: 0;
+}
+
+.DashboardContent__title {
+  z-index: 1;
+  position: 'absolute';
+  top: '2.5%';
+  background-color: lightblue;
+}
+
+.DashboardContent__trendingSearches {
+    z-index: 0;
+}
