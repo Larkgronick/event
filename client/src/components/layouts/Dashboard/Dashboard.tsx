@@ -13,15 +13,8 @@ const Dashboard = () => {
         justify='center'
         background='orange'
       >
-        {/* <Box className='DashboardContent__title' background='purple'>
-          <Heading textAlign='center'>Trending Events</Heading>
-        </Box> */}
-
-        <Box
-          className='DashboardContent__title'
-          style={{ zIndex: 1, position: 'absolute', top: '2.5%' }}
-        >
-          <Heading textAlign='center'>Trending Events</Heading>
+        <Box className='DashboardContent__title'>
+          <Heading>Trending Events</Heading>
         </Box>
 
         <Box
