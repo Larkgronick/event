@@ -61,7 +61,7 @@ const Dashboard = () => {
                 </Box>
               </Stack>
             </Box>
-              <Box className='Divider' />
+              <Box className='Divider' style={{width: "60%", height: "1%", borderBottom: "3px solid gainsboro" }} />
           </Box>
         </Box>
       </Box>
