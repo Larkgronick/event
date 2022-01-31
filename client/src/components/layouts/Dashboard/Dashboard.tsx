@@ -1,5 +1,6 @@
 import React from 'react';
-import { Anchor, Box, Grommet, Heading, Text } from 'grommet';
+import { Anchor, Box, Grommet, Heading, Stack, Text } from 'grommet';
+import '../../../App.css';
 import './Dashboard.css';
 
 const Dashboard = () => {
@@ -10,52 +11,57 @@ const Dashboard = () => {
         width='100%'
         direction='column'
         align='center'
-        justify='center'
-        background='orange'
+        justify='start'
+        // background='orange'
       >
-        <Box className='DashboardContent__title'>
-          <Heading>Trending Events</Heading>
-        </Box>
-
-        <Box
-          className='DashboardContent'
-          width='95%'
-          height='95%'
-          direction='row'
-          justify='between'
-          background='seagreen'
-        >
-          <Box className='DashboardContent__navigation'>
-            <Anchor>Explore</Anchor>
-            <Anchor>My Events</Anchor>
-            <Anchor>Manage Events</Anchor>
-          </Box>
-
-          {/* <Box className='DashboardContent__title' background='pink' height="15%" margin={{left: '3.5%'}}>
-            <Heading textAlign='center'>Trending Events</Heading>
-            <Text textAlign='center'>Center</Text>
-          </Box> */}
-
+        <Box direction='column' align='center' width='95%' height='100%'>
           <Box
-            className='DashboardContent__trendingSearches'
-            round
-            elevation='small'
-            // width=''
-            basis='12%'
-            height='15%'
-            direction='row'
-            justify='between'
-            align='start'
-            pad='medium'
-            wrap
-            background='white'
+            className='DashboardContent'
+            width='100%'
+            height='100%'
+            direction='column'
+            justify='start'
+            align='center'
+            background='seagreen'
           >
-            <Anchor size='small'>#Hashtag</Anchor>
-            <Anchor size='small'>#Hashtag</Anchor>
-            <Anchor size='small'>#Hashtag</Anchor>
-            <Anchor size='small'>#Hashtag</Anchor>
-            <Anchor size='small'>#Hashtag</Anchor>
-            <Anchor size='small'>#Hashtag</Anchor>
+            <Box width='100%' height='20%' background='orange' margin={{top: "1%"}}>
+              <Stack anchor='top'>
+                <Box direction='row' width='100%' justify='between'>
+                  <Box className='DashboardContent__navigation'>
+                    <Anchor>Explore</Anchor>
+                    <Anchor>My Events</Anchor>
+                    <Anchor>Manage Events</Anchor>
+                  </Box>
+
+                  <Box
+                    className='DashboardContent__trendingSearches'
+                    round
+                    elevation='small'
+                    width='10%'
+                    basis='12%'
+                    height='15%'
+                    direction='row'
+                    justify='between'
+                    align='start'
+                    pad='medium'
+                    wrap
+                    background='white'
+                  >
+                    <Anchor size='small'>#Hashtag</Anchor>
+                    <Anchor size='small'>#Hashtag</Anchor>
+                    <Anchor size='small'>#Hashtag</Anchor>
+                    <Anchor size='small'>#Hashtag</Anchor>
+                    <Anchor size='small'>#Hashtag</Anchor>
+                    <Anchor size='small'>#Hashtag</Anchor>
+                  </Box>
+                </Box>
+
+                <Box className='DashboardContent__title'>
+                  <Heading>Trending Events</Heading>
+                </Box>
+              </Stack>
+            </Box>
+              <Box className='Divider' />
           </Box>
         </Box>
       </Box>
@@ -64,12 +70,3 @@ const Dashboard = () => {
 };
 
 export default Dashboard;
-
-// [P L E A S E   R E A D]
-
-// What's up! Please take a look at "center" when changing your browser's zoom level.
-
-// There is an issue with flexbox, where increasing the width of the "trending searches component",
-// pushes the main header text to left, resulting in the main heading being off-center.
-
-// One solution would be to add CSS position: absolute; to the "trending searches" container on the right side.
